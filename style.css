@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.menu ul{
+  padding-left: 0;
+  margin: 0;
+  color: #0096d2;
+  background-color: #2a2a2a;
+  font-size: 20px;
+}
+
+.menu li{
+  list-style-type: none;
+  display: inline-block;
+  border: thin solid black;
+  padding: 0.25em;
+}
+#menu-icon{
+display: none !important;
+}
+
+@media (max-width: 1024px) {
+.menu li{
+display: block;
+}
+
+#menu-icon{
+display: inline !important;
+float: right;
+}
+
+.menu li:not(:first-child){
+  display: none;
+}
+
+.show{
+  display: block !important;
+}
+
+}
